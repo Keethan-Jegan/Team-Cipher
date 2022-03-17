@@ -1,0 +1,24 @@
+<router-outlet></router-outlet>
+<div class="bg">
+	<div class="box1">
+		<form action="/action_page.php">
+			<div class="form-group">
+			<h3><label for="email" style="color: white;">Admin Id</label></h3>
+			<input type="email" style="width:350px; margin: 5px 0px;"class="form-control form-control-lg" placeholder="Enter Admin Id" id="email">
+			</div>
+			<div class="form-group">
+			<h3><label for="pwd" style="color: white;">Password</label></h3>
+			<input type="password" class="form-control form-control-lg" placeholder="Enter password" id="pwd">
+			</div>
+			<div class="form-group form-check">
+			<label class="form-check-label" style="color: white; margin: 5px 0px;" >
+			<input class="form-check-input" type="checkbox"> Remember me
+			</label>
+			</div>
+			<button type="submit" class="btn btn-outline-success">Submit</button><br>
+			<a class="form-check-label" style="color:rgb(87, 145, 253)" routerLink="/admin-register"> I don't have An Account</a><br>
+			<a class="form-check-label" style="color:lightblue" href="#"> Forget Password</a><br><br>
+		</form>
+		<button class="button" style="vertical-align:middle" routerLink="/login"><span>Login as User</span></button>
+  </div>
+</div>
