@@ -30,6 +30,7 @@ import { AdminSearchComponent } from './admin-dashboard/admin-search/admin-searc
 import { AdminNotificationComponent } from './admin-dashboard/admin-notification/admin-notification.component';
 import { AdminInfoComponent } from './admin-dashboard/admin-info/admin-info.component';
 import { AdminNotifyComponent } from './admin-dashboard/admin-notify/admin-notify.component';
+import { GroupSettingsComponent } from './admin-dashboard/group-settings/group-settings.component';
 
 
 @NgModule({
@@ -56,7 +57,8 @@ import { AdminNotifyComponent } from './admin-dashboard/admin-notify/admin-notif
     AdminSearchComponent,
     AdminNotificationComponent,
     AdminInfoComponent,
-    AdminNotifyComponent
+    AdminNotifyComponent,
+    GroupSettingsComponent
   ],
   imports: [
     BrowserModule,
@@ -85,7 +87,8 @@ import { AdminNotifyComponent } from './admin-dashboard/admin-notify/admin-notif
       {path:'bug-report',component:BugReportComponent},
       {path:'define-user',component:DefineUserComponent},
       {path:'manage-user',component:ManageUserComponent},
-      {path: 'admin-notify',component:AdminNotifyComponent}
+      {path: 'admin-notify',component:AdminNotifyComponent},
+      {path: 'group-settings',component:GroupSettingsComponent}
     ]),
   ],
   providers: [],
